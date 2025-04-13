@@ -1,5 +1,10 @@
 package com.tucoderas.taskmanager.enums;
 
+/**
+ * Enum representing the status of a task.
+ * This enum is used to define the different states a task can be in.
+ * The TaskStatus enum is used to track the progress of tasks in the system.
+ */
 public enum TaskStatus {
     PENDING("pending"),
     IN_PROGRESS("in_progress"),

@@ -3,6 +3,11 @@ package com.tucoderas.taskmanager.mapper;
 import com.tucoderas.taskmanager.dto.TaskDto;
 import com.tucoderas.taskmanager.entity.TaskEntity;
 
+/**
+ * Mapper class for converting between TaskDto and TaskEntity.
+ * This class is used to convert data between the DTO and Entity layers.
+ * The TaskMapper class is used to map data from the database to the client and vice versa.
+ */
 public class TaskMapper {
 
     private TaskMapper() {

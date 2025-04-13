@@ -8,6 +8,12 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Data;
 
+/**
+ * Entity class representing a Task in the database.
+ * This class is used to map the Task entity to the database table.
+ * It contains fields for the task's ID, title, description, and status.
+ * The TaskEntity class is used to create, update, and retrieve tasks from the database.
+ */
 @Entity
 @Data
 public class TaskEntity {

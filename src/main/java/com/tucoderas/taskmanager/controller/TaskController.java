@@ -32,18 +32,18 @@ public class TaskController {
         taskService.createTask(taskdto);
     }
 
-    @GetMapping("/{id}")
-    public TaskDto getTaskById(@PathVariable Long taskDtoId) {
+    @GetMapping("/{taskDtoId}")
+    public TaskDto getTaskById(@PathVariable("taskDtoId") Long taskDtoId) {
         return taskService.getTaskById(taskDtoId);
     }
 
-    @PutMapping("")
-    public void updateTask(@PathVariable Long taskDtoId, @Valid @RequestBody TaskDto taskdto) {
+    @PutMapping("/{taskDtoId}")
+    public void updateTask(@PathVariable("taskDtoId") Long taskDtoId, @Valid @RequestBody TaskDto taskdto) {
         taskService.updateTask(taskDtoId,taskdto);
     }
 
-    @DeleteMapping("/{id}")
-    public void deleteTask(@PathVariable Long taskDtoId) {
+    @DeleteMapping("/{taskDtoId}")
+    public void deleteTask(@PathVariable("taskDtoId") Long taskDtoId) {
         taskService.deleteTask(taskDtoId);
     }
 }
